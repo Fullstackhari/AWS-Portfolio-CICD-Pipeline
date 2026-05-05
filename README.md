@@ -1,4 +1,4 @@
-# 🚀 AWS Portfolio Website with CI/CD Pipeline
+# 🚀 AWS CI/CD Powered Portfolio Deployment using GitHub Actions
 
 ![Architecture](website/src/img/aws-architecture.png)
 
