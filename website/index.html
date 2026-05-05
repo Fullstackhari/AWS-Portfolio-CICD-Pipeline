@@ -1,138 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Harindra | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="src/styles/styles.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<title>Harindra | Dev Haven</title>
+
+<link rel="stylesheet" href="src/styles/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+
+<style>
+
+/* ===== SIMPLE MODERN ADDITIONS ===== */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 8%;
+  background: rgba(0,0,0,0.6);
+  position: fixed;
+  width: 100%;
+  z-index: 1000;
+}
+
+.navbar a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 8%;
+}
+
+.hero h1 {
+  font-size: 3.5rem;
+}
+
+.hero span {
+  color: #ef811a;
+}
+
+.section {
+  padding: 80px 8%;
+}
+
+.project-card {
+  background: white;
+  color: black;
+  padding: 20px;
+  border-radius: 12px;
+  margin: 15px;
+  flex: 1;
+}
+
+.projects {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+footer {
+  text-align: center;
+  padding: 30px;
+}
+
+</style>
+
 </head>
 
-<body class="main-content">
+<body>
 
-<!-- ================= HEADER ================= -->
-<header class="container header active" id="home">
-    <div class="header-content">
-
-        <div class="right-header">
-            <h1 class="name">
-                Hi, I'm <span>C Harindra</span>
-            </h1>
-            <h2>Full Stack Developer | ServiceNow Enthusiast</h2>
-
-            <p>
-                Final-year Computer Science student passionate about building real-world applications.
-                Skilled in Full Stack Development, ServiceNow, and AWS cloud deployment with CI/CD pipelines.
-            </p>
-
-            <div class="btn-con">
-                <a href="resume.pdf" class="main-btn">
-                    <span class="btn-text">Download Resume</span>
-                    <span class="btn-icon"><i class="fas fa-download"></i></span>
-                </a>
-            </div>
-        </div>
-
-    </div>
-</header>
-
-<!-- ================= ABOUT ================= -->
-<main>
-<section class="container about" id="about">
-    <div class="main-title">
-        <h2>About <span>Me</span></h2>
-    </div>
-
-    <div class="about-container">
-        <div class="left-about">
-            <h4>About Me</h4>
-            <p>
-                I am a final-year Computer Science student at BITM, Ballari with a CGPA of 8.63.
-                I enjoy developing scalable applications and working with modern technologies like React, Node.js, ServiceNow, and AWS.
-                I have built multiple real-world projects including CI/CD pipelines and web applications.
-            </p>
-        </div>
-
-        <div class="right-about">
-            <div class="about-item">
-                <p class="large-text">10+</p>
-                <p>Projects Completed</p>
-            </div>
-
-            <div class="about-item">
-                <p class="large-text">3+</p>
-                <p>Core Technologies</p>
-            </div>
-        </div>
-    </div>
-
-    <!-- SKILLS -->
-    <h4 class="stat-title">My Skills</h4>
-    <ul>
-        <li>Full Stack Development (React, Node.js)</li>
-        <li>ServiceNow Development</li>
-        <li>AWS Cloud & Deployment</li>
-        <li>CI/CD with GitHub Actions</li>
-        <li>MongoDB / MySQL</li>
-    </ul>
-
-    <!-- TIMELINE -->
-    <h4 class="stat-title">Timeline</h4>
-
-    <p><b>2025 - Present:</b> Full Stack Projects & Portfolio Development</p>
-    <p><b>2024 - 2025:</b> ServiceNow Application Development</p>
-    <p><b>2022 - 2026:</b> B.E Computer Science – BITM Ballari</p>
-
-</section>
-
-<!-- ================= PROJECTS ================= -->
-<section class="container" id="portfolio">
-    <div class="main-title">
-        <h2>My <span>Projects</span></h2>
-    </div>
-
-    <div class="portfolios">
-
-        <div class="portfolio-item">
-            <h3>AWS Portfolio CI/CD</h3>
-            <p>Deployed portfolio using AWS S3 & GitHub Actions.</p>
-        </div>
-
-        <div class="portfolio-item">
-            <h3>Null Value Detector</h3>
-            <p>Web app to detect missing values in datasets.</p>
-        </div>
-
-        <div class="portfolio-item">
-            <h3>ServiceNow Application</h3>
-            <p>Built automation workflows using ServiceNow platform.</p>
-        </div>
-
-    </div>
-</section>
-
-<!-- ================= CONTACT ================= -->
-<section class="container contact" id="contact">
-    <div class="main-title">
-        <h2>Contact <span>Me</span></h2>
-    </div>
-
-    <p><b>Location:</b> Ballari, Karnataka, India</p>
-    <p><b>Email:</b> your-email@gmail.com</p>
-    <p><b>Education:</b> BITM Ballari</p>
-    <p><b>Languages:</b> English, Kannada, Hindi</p>
-
+<!-- ===== NAVBAR ===== -->
+<div class="navbar">
+    <h2>Harindra</h2>
     <div>
-        <a href="https://github.com/your-username" target="_blank">GitHub</a> |
-        <a href="https://linkedin.com/in/your-profile" target="_blank">LinkedIn</a>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
     </div>
+</div>
+
+<!-- ===== HERO SECTION ===== -->
+<section class="hero" id="home">
+
+<div>
+    <h1>Hello, I'm <span>Harindra</span></h1>
+    <h3>Full Stack Developer | AWS | ServiceNow</h3>
+
+    <p>
+        Passionate about building scalable applications and deploying them using modern cloud technologies.
+    </p>
+
+    <a href="resume.pdf" class="main-btn">Download Resume</a>
+</div>
+
+<div>
+    <img src="images/profile.png" width="350">
+</div>
+
 </section>
 
-</main>
+<!-- ===== ABOUT ===== -->
+<section class="section" id="about">
+
+<h2>About Me</h2>
+
+<p>
+Final-year Computer Science student at BITM Ballari with strong skills in Full Stack Development,
+AWS Cloud, and ServiceNow. I focus on building real-world applications and deploying scalable solutions.
+</p>
+
+</section>
+
+<!-- ===== PROJECTS ===== -->
+<section class="section" id="projects">
+
+<h2>Projects</h2>
+
+<div class="projects">
+
+<div class="project-card">
+<h3>AWS CI/CD Portfolio</h3>
+<p>Deployed using S3 + GitHub Actions.</p>
+</div>
+
+<div class="project-card">
+<h3>Null Value Detector</h3>
+<p>Detect missing values in datasets.</p>
+</div>
+
+<div class="project-card">
+<h3>ServiceNow App</h3>
+<p>Workflow automation project.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- ===== CONTACT ===== -->
+<section class="section" id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: your-email@gmail.com</p>
+<p>Location: Ballari, Karnataka</p>
+
+<a href="https://github.com/your-username">GitHub</a> |
+<a href="https://linkedin.com/in/your-profile">LinkedIn</a>
+
+</section>
+
+<footer>
+© 2026 Harindra | Portfolio
+</footer>
 
 </body>
 </html>
