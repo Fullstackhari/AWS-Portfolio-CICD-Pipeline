@@ -8,27 +8,10 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 18
-
-      # ✅ Install inside website folder
-      - name: Install Dependencies
-        run: npm install
-        working-directory: website
-
-      # ✅ Build inside website folder
-      - name: Build Project
-        run: npm run build
-        working-directory: website
-
-      # ✅ Upload correct build folder
       - name: Sync Files to S3
         uses: jakejarvis/s3-sync-action@master
         with:
@@ -38,4 +21,6 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
-          SOURCE_DIR: "website"
+          SOURCE_DIR: 'website'  # Change if your files are in a different directory
+
+      
